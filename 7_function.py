@@ -313,3 +313,75 @@
 # print(power(num,exponent))
 
 #task 25
+def palindrome(word):
+    word = word.strip().lower()
+    if word == word[::-1]:
+        return "YES"
+    else:
+        return "NO"
+word = input()
+print(palindrome(word))
+
+#task 26
+def longest_word(words):
+    urt = words[0]
+    for i in words:
+        if len(i) > len(urt):
+            urt = i
+    return urt
+words = input().split()
+print(longest_word(words))
+
+#task 27
+def burtgel(text):
+    name, age, city = text.split(",")
+    name = name.strip()
+    age = int(age.strip()) + 1
+    city = city.strip()
+    return name + " | Ireh jil: " + str(age) + " | " + city
+text = input()
+print(burtgel(text))
+
+#task 28
+def unique_words(text):
+    words = text.lower().split()
+    unique = []
+    for i in words:
+        if i not in unique:
+            unique.append(i)
+    unique.sort()
+    return " ".join(unique)
+text = input()
+print(unique_words(text))
+
+#task 29
+def second_max(nums):
+    unique = []
+    for i in nums:
+        if i not in unique:
+            unique.append(i)
+    unique.sort()
+    return unique[-2]
+nums = list(map(int, input().split()))
+print(second_max(nums))
+
+#task 30
+def class_report(names, scores):
+    dundaj = round(sum(scores) / len(scores), 2)
+    print("Dundaj:", dundaj)
+
+    max_score = max(scores)
+    max_name = names[scores.index(max_score)]
+    print("Hamgiin undur:", max_name, max_score)
+
+    names.sort()
+    print("Ners:", ", ".join(names))
+
+n = int(input())
+names = []
+scores = []
+for i in range(n):
+    name, score = input().split(",")
+    names.append(name.strip())
+    scores.append(int(score.strip()))
+class_report(names, scores)

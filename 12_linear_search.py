@@ -227,3 +227,52 @@
 #     students.append([name, score])
 
 # print(ehnii_80_aas_deesh(students))
+
+#task 10
+def suuliin_sondgoi_index(numbers):
+    index = -1
+    for i in range(len(numbers)):
+        if numbers[i] % 2 != 0:
+            index = i
+    return index
+
+numbers = [4, 7, 10, 13, 8, 21, 6]
+print(suuliin_sondgoi_index(numbers))
+
+#task 11
+def buh_index(numbers, target):
+    indexuud = []
+    for i in range(len(numbers)):
+        if numbers[i] == target:
+            indexuud.append(i)
+    return indexuud
+
+numbers = [4, 7, 4, 9, 4, 2, 4]
+target = int(input("Haih too: "))
+indexuud = buh_index(numbers, target)
+
+if len(indexuud) == 0:
+    print("oldsongui")
+else:
+    for i in indexuud:
+        print(f"Index: {i}")
+
+#task 12
+def onoo_shalgah(students, ner):
+    for student in students:
+        if student[0] == ner:
+            if student[1] >= 60:
+                return "Tentssen"
+            else:
+                return "Tentseegui"
+    return "Oldsongui"
+
+students = [
+    ["Bat", 65],
+    ["Saraa", 82],
+    ["Bold", 74],
+    ["Anu", 91],
+    ["Temuulen", 78]
+]
+ner = input("Ner: ")
+print(onoo_shalgah(students, ner))

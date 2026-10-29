@@ -909,7 +909,39 @@ print(o)
 # massiv = list(map(int, input("too og: ").split()))
 # print(min(massiv))
 
-# task 98
+# task 98                                name massivt too hed bgaa
 
 # n = int(input("too og; "))
 # massiv = list(map(int,input("too og: ").split()))
+# k = int(input("haih too og: "))
+# davtalt = 0
+# for too in massiv:
+#     if too == k:
+#         davtalt = davtalt + 1
+# print(k, davtalt)
+
+
+#task 99                                name hamgiin ih element hed deh
+# n = int(input("too og; "))
+# massiv = list(map(int,input("too og: ").split()))
+# ih = massiv[0]
+# dugaar = 1
+# for i in range(n):
+#     if massiv[i] > ih:
+#         ih = massiv[i]
+#         dugaar = i + 1
+# print(ih, dugaar)
+
+
+#task 100                               name hamgiin ih element hed bgaa
+# n = int(input("too og; "))
+# massiv = list(map(int,input("too og: ").split()))
+# ih = massiv[0]
+# davtalt = 0
+# for too in massiv:
+#     if too > ih:
+#         ih = too
+#         davtalt = 1
+#     elif too == ih:
+#         davtalt = davtalt + 1
+# print(ih, davtalt)

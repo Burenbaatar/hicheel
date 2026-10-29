@@ -336,36 +336,78 @@
 
 
 #task 14
+# class Student:
+#     def __init__(self, name, age, grade):
+#         self.name = name
+#         self.age = age
+#         self.grade = grade
+
+#     def show_info(self):
+#         print(f"Ner: {self.name}\nNas: {self.age}\nAngi: {self.grade}")
+
+#     def change_name(self, new_name):
+#         self.name = new_name
+
+#     def change_grade(self, new_grade):
+#         self.grade = new_grade
+
+# students = []
+# while True:
+#     name = input("Сурагчийн нэр (дуусгах бол Enter дар): ")
+#     if name == "":
+#         break
+#     age = int(input("nas og: "))
+#     grade = input("angi og: ")
+#     students.append(Student(name, age, grade))
+
+# for i in students:
+#     print("omnoh")
+#     i.show_info()
+#     new_name = input(f"{i.name} - shine ner og: ")
+#     new_grade = input(f"{i.name} - shine angi og: ")
+#     i.change_name(new_name)
+#     i.change_grade(new_grade)
+#     print("shine")
+#     i.show_info()
+
+
+#task 15
 class Student:
-    def __init__(self, name, age, grade):
+    def __init__(self, name, grade):
         self.name = name
-        self.age = age
         self.grade = grade
+        self.scores = []             # suragch bured tusdaa list uusne
 
     def show_info(self):
-        print(f"Ner: {self.name}\nNas: {self.age}\nAngi: {self.grade}")
+        print(f"Ner: {self.name}\nAngi: {self.grade}\nOnoonuud: {self.scores}")
 
-    def change_name(self, new_name):
-        self.name = new_name
+    def add_score(self, score):
+        self.scores.append(score)
 
-    def change_grade(self, new_grade):
-        self.grade = new_grade
+    def average(self):
+        if len(self.scores) == 0:
+            return 0
+        return round(sum(self.scores) / len(self.scores), 2)
+
+    def check_result(self):
+        if self.average() >= 60:
+            print(self.name, ": tentssen")
+        else:
+            print(self.name, ": tentseegui")
 
 students = []
 while True:
-    name = input("Сурагчийн нэр (дуусгах бол Enter дар): ")
+    name = input("Suragchiin ner (duusgah bol Enter dar): ")
     if name == "":
         break
-    age = int(input("nas og: "))
     grade = input("angi og: ")
-    students.append(Student(name, age, grade))
+    s = Student(name, grade)
+    scores = input("onoonuud og (zaigaar tusgaarla): ").split()
+    for score in scores:
+        s.add_score(int(score))
+    students.append(s)
 
 for i in students:
-    print("omnoh")
     i.show_info()
-    new_name = input(f"{i.name} - shine ner og: ")
-    new_grade = input(f"{i.name} - shine angi og: ")
-    i.change_name(new_name)
-    i.change_grade(new_grade)
-    print("shine")
-    i.show_info()
+    print("Dundaj:", i.average())
+    i.check_result()
