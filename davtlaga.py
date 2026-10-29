@@ -62,7 +62,6 @@
 
 #task 7
 # def login(username: str, password: str, is_blocked: bool, failed_attempts: int) -> str:
-#     """Нэвтрэх оролдлогын үр дүнг заасан тэргүүлэх дарааллаар буцаана."""
 #     if is_blocked:
 #         return "Таны эрх хаагдсан байна"
 

@@ -82,7 +82,7 @@
 #     "age" : 18,
 #     "score" : 95
 # }
-# student["score"] = 95     # хуучин оноог 95 болгож шинэчлэв
+# student["score"] = 95
 # print(student["score"])
 
 #task 16
@@ -92,7 +92,7 @@
 #     "score" : 95
 # }
 # student["city"] = "Ulaanbaatar"
-# student["score"] = 95     # хуучин оноог 95 болгож шинэчлэв
+# student["score"] = 95
 # print(student)
 
 #task 17

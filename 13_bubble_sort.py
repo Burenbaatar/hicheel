@@ -78,7 +78,6 @@
 # #task 8
 # numbers = list(map(int, input("toonuudaa oruul: ").split()))
 
-# # zovhon neg toirog
 # for j in range(len(numbers) - 1):
 #     if numbers[j] > numbers[j + 1]:
 #         numbers[j], numbers[j + 1] = numbers[j + 1], numbers[j]
@@ -302,7 +301,6 @@
 # #task 23
 # numbers = list(map(int, input("toonuudaa oruul: ").split()))
 
-# # baruunaas zuun tiish neg toirog
 # for j in range(len(numbers) - 1, 0, -1):
 #     if numbers[j] < numbers[j - 1]:
 #         numbers[j], numbers[j - 1] = numbers[j - 1], numbers[j]
@@ -315,7 +313,6 @@
 
 # for i in range(n - 1):
 #     for j in range(n - 1 - i):
-#         # sondgoi daraa ni tegsh baival soli
 #         if numbers[j] % 2 == 1 and numbers[j + 1] % 2 == 0:
 #             numbers[j], numbers[j + 1] = numbers[j + 1], numbers[j]
 
@@ -370,7 +367,6 @@
 
 # for i in range(n - 1):
 #     for j in range(n - 1 - i):
-#         # < ashiglaj baigaa uchraas adil onootoi bol solihgui, anhnii daraalal hadgalagdana
 #         if students[j][1] < students[j + 1][1]:
 #             students[j], students[j + 1] = students[j + 1], students[j]
 

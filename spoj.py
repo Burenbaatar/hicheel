@@ -384,16 +384,11 @@ print(o)
 #     print("Буруу тоот")
 
 # else:
-#     #neg ortsni ail = 5 * 5 == 25
 #     neg_ortsnii_ail = davhar * neg_davhriin_ail
 
-# #orts dotorg bairlal  = (35-1 ) % 25 == 9
 #     orts_dotorh_bairlal = (toot - 1) % neg_ortsnii_ail
-# #davhar dugaar = 9 // 5 +1 == 2
 #     davhar_dugaar = orts_dotorh_bairlal // neg_davhriin_ail + 1
-# #9//5 + 1 == 2
 #     haalga_dugaar = orts_dotorh_bairlal % neg_davhriin_ail + 1
-# #9 % 5 +1
 #     print(davhar_dugaar, haalga_dugaar)
 
 
@@ -406,16 +401,13 @@ print(o)
 # d, h = map(int, input().split())
 # t = int(input())
 
-# # Нийт айлын тоо
 # niit_ail = d * h
 
 # if t <= 0 or t > niit_ail:
 #     print("iim ail bhgu")
 # else:
-#     # Аль давхар вэ?
 #     davhar = (t - 1) // h + 1
 
-#     # Тухайн давхрын хэд дэх хаалга вэ?
 #     haalga = (t - 1) % h + 1
 
 #     print(davhar, haalga)
@@ -445,18 +437,12 @@ print(o)
 #     print("Буруу тоот")
 
 # else:
-#     #neg ortsni ail = 5 * 5 == 25
 #     neg_ortsnii_ail = davhar * neg_davhriin_ail
 
-# #ortsni dugaar = (35-1) // 25+1 == 2
 #     orts_dugaar = (toot - 1) // neg_ortsnii_ail + 1
-# #orts dotorg bairlal  = (35-1 ) % 25 == 9
 #     orts_dotorh_bairlal = (toot - 1) % neg_ortsnii_ail
-# #davhar dugaar = 9 // 5 +1 == 2
 #     davhar_dugaar = orts_dotorh_bairlal // neg_davhriin_ail + 1
-# #9//5 + 1 == 2
 #     haalga_dugaar = orts_dotorh_bairlal % neg_davhriin_ail + 1
-# #9 % 5 +1
 #     print(orts_dugaar, davhar_dugaar, haalga_dugaar)
 
 

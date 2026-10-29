@@ -95,7 +95,7 @@ class GameCharacter:
         self.damage = damage
 
     def attack(self, enemy):
-        enemy.health -= self.damage      # daisnii object-iin health-iig uurchilnu
+        enemy.health -= self.damage
         if enemy.health < 0:
             enemy.health = 0
 

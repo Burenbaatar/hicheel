@@ -8,15 +8,12 @@
 #         print("Би", self.nas, "настай.")
 
 
-# # Object үүсгэж байна
 # hun1 = Hun("Бат", 20)
 # hun2 = Hun("Сараа", 18)
 
-# # Object-ийн мэдээлэл ашиглах
 # print(hun1.ner)
 # print(hun1.nas)
 
-# # Method дуудах
 # hun1.taniltsuulah()
 # hun2.taniltsuulah()
 
@@ -249,10 +246,10 @@
 # class Student:
 #     def __init__(self, name):
 #         self.name = name
-#         self.attendance = 0          # эхний ирц 0
+#         self.attendance = 0
 
 #     def attend(self):
-#         self.attendance += 1         # дуудах бүрд +1
+#         self.attendance += 1
 
 #     def show_attendance(self):
 #         print(self.name, "- irts:", self.attendance)
@@ -376,7 +373,7 @@ class Student:
     def __init__(self, name, grade):
         self.name = name
         self.grade = grade
-        self.scores = []             # suragch bured tusdaa list uusne
+        self.scores = []
 
     def show_info(self):
         print(f"Ner: {self.name}\nAngi: {self.grade}\nOnoonuud: {self.scores}")

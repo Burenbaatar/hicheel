@@ -30,9 +30,6 @@
 # else:
 #     print("F")
 
-# # Asuult: 85 onoond D garna. 85 >= 60 unen uchraas ehnii nuhtsul biyelj,
-# # daraagiin elif-uud ogt shalgagdahgui.
-
 # #task 3
 # on = int(input())
 
@@ -66,8 +63,6 @@
 
 # print(tulbur)
 
-# # Zuvlugu: or. Neg tsag ">= 22" bolon "<= 5" hoyuland zereg orohgui tul and bish or.
-
 # #task 6
 # n = int(input())
 # niilber = 0
@@ -97,9 +92,6 @@
 
 # print(urvuu)
 
-# # Asuult: urvuu ni too (int). Ehnii 0-uud 0 * 10 + 0 = 0 bolj,
-# # toonii urd talin 0 utgagui tul 0021 bish 21 garna.
-
 # #task 9
 # n = int(input())
 
@@ -114,8 +106,6 @@
 #         print(i, end=" ")
 # print()
 
-# # Asuult: 15-d huvaagdah too 3-d ch, 5-d ch huvaagdana. 3-iig ehend shalgaval
-# # Fiz gej hevleed doorh elif-uud shalgagdahgui, FizBazz hezee ch garahgui.
 
 # #task 10
 # secret = 37
@@ -132,7 +122,6 @@
 #     else:
 #         print("Baga baina")
 
-#     # nemelt sorilt
 #     if oroldlogo == 5:
 #         print("Yalagdlaa")
 #         break
@@ -168,9 +157,6 @@
 # print(find_pairs([2, 7, 4, 5, 1], 6))
 # print(find_pairs([1, 2, 3], 10))
 
-# # Asuult: i + 1-ees ehelbel hos bur neg l udaa shalgagdaj, element uuruutei hoslohgui.
-# # 0-ees ehelbel (2, 4), (4, 2) geh met davhardana, 3 + 3 shig element uuruutei ni hoslono.
-
 # #task 14
 # def most_frequent(arr):
 #     best = arr[0]
@@ -180,7 +166,6 @@
 #         for j in range(len(arr)):
 #             if arr[j] == arr[i]:
 #                 count += 1
-#         # > ashiglaj baigaa uchraas tentsuu bol ehend orson ni uldene
 #         if count > best_count:
 #             best = arr[i]
 #             best_count = count
@@ -225,9 +210,6 @@
 
 # print(remove_duplicates([3, 1, 3, 2, 1, 5]))
 # print(remove_duplicates(["a", "b", "a"]))
-
-# # Asuult: set daraalal hadgaldaggui tul list(set(arr)) hiivel
-# # anh orson daraalal aldagdaj boloh.
 
 # #task 17
 # def word_count(text):
@@ -305,9 +287,6 @@
 # print(is_prime(21))
 # print(primes_up_to(20))
 
-# # Asuult: is_prime-iig dahin ashiglaj bolno, kod bogino, unshihad amar.
-# # Aldaa garval neg l gazar zasna, is_prime-iig tusad ni shalgaj bolno.
-
 # #task 22
 # def find_all(arr, x):
 #     indexes = []
@@ -356,9 +335,6 @@
 # print(bs_steps(arr, 4))
 # print(bs_steps(arr, 7))
 
-# # Asuult: shugaman hailt 11-iig 6 alhamd olno (1, 3, 5, 7, 9, 11).
-# # Binary search 2 alham. Jagsaalt urt baih tusam yalgaa ni ulam ih.
-
 # #task 25
 # def search_insert(arr, x):
 #     low = 0
@@ -371,7 +347,6 @@
 #             low = mid + 1
 #         else:
 #             high = mid - 1
-#     # oldoogui bol low ni x-iig oruulah bairlal deer zogsono
 #     return low
 
 
@@ -402,9 +377,6 @@
 # print(bubble_sort([1, 2, 3]))
 # print(bubble_sort([3, 2, 1]))
 
-# # Asuult: neg ch solilt hiigdeegui bol jagsaalt ali hediin erembelegdsen gesen ug.
-# # Tiim uchraas swapped-aar shalgaad break hiij erte zogsooj bolno.
-
 # #task 27
 # def selection_sort(arr):
 #     n = len(arr)
@@ -418,9 +390,6 @@
 
 
 # selection_sort([64, 25, 12, 22, 11])
-
-# # Asuult: 4 element bairandaa orson bol uldsen gants element hamgiin ih ni
-# # tul automataar suuld ni bairandaa baina.
 
 # #task 28
 # def merge_sort(arr):
@@ -448,7 +417,6 @@
 #     arr = merge_sort(arr)
 #     result = []
 #     for x in arr:
-#         # erembelsen tul adil toonuud zergelden, suuliin nemsentei haritsuulahad hangalttai
 #         if len(result) == 0 or result[-1] != x:
 #             result.append(x)
 #     return result
