@@ -334,40 +334,6 @@
 #     i.show_scores()
 #     i.average()
 
-#task 14
-class student:
-    def __init__(self, name, age,grade):
-        self.name = name
-        self.age = age
-        self.grade = grade
-
-    def show_info(self):
-        print(f"ner: {self.name}\nNas: {self.age}\nAngi: {self.grade}")
-    def change_name(self,new_name):
-        self.new_name = new_name
-    def change_grade(self,new_grade):
-        self.new_grade = new_grade
-
-#task 14
-class Student:
-    def __init__(self, name, age, grade):
-        self.name = name
-        self.age = age
-        self.grade = grade
-
-    def show_info(self):
-        print(f"Ner: {self.name}\nNas: {self.age}\nAngi: {self.grade}")
-
-    def change_name(self, new_name):
-        self.name = new_name
-
-    def change_grade(self, new_grade):
-        self.grade = new_grade
-
-name = input("Сурагчийн нэр (дуусгах бол Enter дар): ")
-age = int(input("nas og: "))
-grade = input("angi og: ")
-
 
 #task 14
 class Student:
@@ -395,11 +361,11 @@ while True:
     students.append(Student(name, age, grade))
 
 for i in students:
-    print("--- omnoh medeelel ---")
+    print("omnoh")
     i.show_info()
     new_name = input(f"{i.name} - shine ner og: ")
     new_grade = input(f"{i.name} - shine angi og: ")
     i.change_name(new_name)
     i.change_grade(new_grade)
-    print("--- shine medeelel ---")
+    print("shine")
     i.show_info()
